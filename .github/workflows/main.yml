@@ -3,7 +3,7 @@ on: push
 jobs:
 
   test-python-versions:
-    name: Check Python ${{matrix.python-version}} on %{{matrix.runs-on}}
+    name: Check Python ${{matrix.python-version}} on ${{matrix.runs-on}}
     runs-on: ${{matrix.runs-on}}
     continue-on-error: ${{matrix.allow_failure}}
     strategy:
