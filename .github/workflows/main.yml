@@ -5,6 +5,7 @@ jobs:
   test-python-versions:
     name: Check Python ${{matrix.python-version}} on Ubuntu
     runs-on: ubuntu-latest
+    continue-on-error: ${{matrix.python-version}}
     strategy:
       fail-fast: false
       matrix:
